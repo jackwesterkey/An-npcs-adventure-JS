@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "kaboom": "^3000.1.17"
+  },
+  "window": {
+    "title": "test",
+    "width": 1480,
+    "height": 680,
+    "toolbar": false
+  }
+}
