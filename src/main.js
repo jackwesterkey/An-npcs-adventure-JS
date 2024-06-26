@@ -2,6 +2,8 @@ import k from "./kaboomContext.js";
 import world from "./scenes/world.js";
 import house from "./scenes/house.js";
 //import { SaveSystem } from "./save.js";
+import dungeon from "./scenes/dungeon.js";
+import mainMenu from "./scenes/mainMenu.js";
 
 k.loadFont("OldLondon", "./assets/OldLondon.ttf")
 k.loadSprite("assets", "./assets/topdownasset.png", {
@@ -26,6 +28,10 @@ k.loadSprite("assets", "./assets/topdownasset.png", {
             to: 1017,
             loop: true,
         },
+        "player-attack-up": 1094,
+        "player-attack-down": 1092,
+        "player-attack-left": 1093,
+        "player-attack-right": 1093,
         "slime-idle-down": 858,
         "slime-down": {
             from: 858,
@@ -48,12 +54,35 @@ k.loadSprite("assets", "./assets/topdownasset.png", {
         "oldman-side": 907,
         "oldman-up": 905,
         "oldman-side2": 868,
+        "ghost-down": { from: 862, to: 863, loop: true }
     },
 });
-
+k.loadSpriteAtlas("./assets/topdownasset.png", {
+    "full-heart": {
+      x: 0,
+      y: 224,
+      width: 48,
+      height: 48,
+    },
+    "half-heart": {
+      x: 48,
+      y: 224,
+      width: 48,
+      height: 48,
+    },
+    "empty-heart": {
+      x: 96,
+      y: 224,
+      width: 48,
+      height: 48,
+    },
+  });
+  
 const scenes = {
     world,
     house,
+    dungeon,
+    mainMenu,
 };
 
 for (const sceneName in scenes) {
@@ -65,4 +94,4 @@ for (const sceneName in scenes) {
  //await SaveSystem.save();
  //await SaveSystem.load();
  //};
-k.go("world");
+k.go("mainMenu");

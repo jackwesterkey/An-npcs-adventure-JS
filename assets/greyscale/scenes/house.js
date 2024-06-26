@@ -6,7 +6,7 @@ import { healthBar } from "../uiComponents/healthbar.js";
 
 export default async function house(k) {
     // Colorize the background
-    colorizeBackground(k, 27, 29, 52);
+    colorizeBackground(k, 30, 30, 30);
 
     // Fetch map data
     const mapData = await fetchMapData("./assets/maps/house.json");

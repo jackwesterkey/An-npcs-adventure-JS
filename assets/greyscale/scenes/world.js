@@ -16,7 +16,7 @@ import {
 
 export default async function world(k) {
   const previousScene = gameState.getPreviousScene();
-  colorizeBackground(k, 0, 122, 212);
+  colorizeBackground(k, 156, 156, 156);
 
   let entities = {
     player: null,
