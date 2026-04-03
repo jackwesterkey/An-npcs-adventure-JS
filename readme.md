@@ -19,3 +19,7 @@ Open the readme to learn how to use it.
 I also added bullets, but I commented them out in the code. Just remove the comments, and it will be usable.
 
 And where i got the font https://www.dafont.com/old-london.font
+
+
+update:
+remove //  "electron": ">=39.8.1" if it does not work and // edit it out and use   "electron": "^23.2.1", that does work and has been tested
