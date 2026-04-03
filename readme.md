@@ -27,5 +27,6 @@ remove the   "electron": ">=39.8.1" in
 package.json 
 package-lock.json 
 package-lock for electron.json 
+package 1 for electron.json
 to use 
 "electron": "^23.2.1",
